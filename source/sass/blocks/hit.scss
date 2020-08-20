@@ -1,0 +1,68 @@
+.hit {
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hit__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0 0 3px 0;
+}
+
+.hit__week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-1;
+  margin: 0 0 17px 0;
+  text-transform: uppercase;
+}
+
+.hit__text {
+  margin: 0 0 28px 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: $font-color;
+}
+
+.hit__characteristic {
+  font-size: 15px;
+  line-height: 20px;
+  color: $font-color;
+}
+
+.hit__item {
+  display: flex;
+  border-bottom: 1px solid $light-gray;
+  min-height: 39px;
+  align-items: center;
+}
+
+.hit__parameter {
+  width: 97px;
+}
+
+.hit__description {
+  margin: 0;
+}
+
+.hit__photo-1 {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 25px;
+}
+
+.hit__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $font-color;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hit__order {
+  margin: 0 auto 36px auto;
+}

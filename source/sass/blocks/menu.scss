@@ -1,0 +1,14 @@
+.menu {
+  position: absolute;
+  top: 32px;
+  right: 33px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--open {
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-menu-open.svg");
+  }
+}

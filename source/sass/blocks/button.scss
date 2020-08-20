@@ -1,0 +1,19 @@
+.button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 2px solid $font-color;
+  color: $font-color;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  width: 259px;
+  height: 52px;
+  background-color: transparent;
+  cursor: pointer;
+
+  // &:active,
+  // &:focus {
+  //   outline: none;
+  // }
+}

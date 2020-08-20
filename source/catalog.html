@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
     </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип Мишки">
       </a>
       <button class="menu menu--open" type="button" aria-label="Открыть меню"></button>
-      <button class="menu menu--closs" type="button" aria-label="Закрыть меню"></button>
-      <nav class="main-nav">
+      <button class="menu menu--closs hidden" type="button" aria-label="Закрыть меню"></button>
+      <nav class="main-nav hidden">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">
@@ -41,49 +42,66 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <article class="card-product">
-            <h2 class="card-product__title">Зайчик-попрыгайчик</h2>
             <img class="card-product__image" src="img/photo-1-mobile-1.jpg" width="260" height="195" alt="Фото изделия">
-            <p class="card-product__description">Рост 30 см, вес 200 г</p>
-            <p class="card-product__price">1 200 руб.</p>
-            <button class="card-product__buy" type="button" aria-label="Добавить в корзину"></button>
+            <div class="card-product__block">
+              <h2 class="card-product__title">Зайчик-попрыгайчик</h2>
+              <p class="card-product__description">Рост 30 см, вес 200 г</p>
+              <div class="card-product__buy-block">
+                <p class="card-product__price">1 200 руб.</p>
+                <button class="card-product__button" type="button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
           </article>
         </li>
         <li class="catalog__item">
           <article class="card-product">
-            <h2 class="card-product__title">Корзинка для белья</h2>
             <img class="card-product__image" src="img/photo-2-mobile-1.jpg" width="260" height="195" alt="Фото изделия">
-            <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
-            <p class="card-product__price">690 руб.</p>
-            <button class="card-product__buy" type="button" aria-label="Добавить в корзину"></button>
+            <div class="card-product__block">
+              <h2 class="card-product__title">Корзинка для белья</h2>
+              <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
+              <div class="card-product__buy-block">
+                <p class="card-product__price">690 руб.</p>
+                <button class="card-product__button" type="button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
           </article>
         </li>
         <li class="catalog__item">
           <article class="card-product">
-            <h2 class="card-product__title">Большая корзинка для игрушек</h2>
             <img class="card-product__image" src="img/photo-3-mobile-1.jpg" width="260" height="195" alt="Фото изделия">
-            <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
-            <p class="card-product__price">1 500 руб.</p>
-            <button class="card-product__buy" type="button" aria-label="Добавить в корзину"></button>
+            <div class="card-product__block">
+              <h2 class="card-product__title">Большая корзинка для игрушек</h2>
+              <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
+              <div class="card-product__buy-block">
+                <p class="card-product__price">1 500 руб.</p>
+                <button class="card-product__button" type="button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
           </article>
         </li>
       </ul>
       <div class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
-        <img class="production-process__image" src="img/production-process.jpg" width="260" height="150" alt="Процесс производства">
-        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production-process__order button" href="form.html">Сделать заказ</a>
+        <div class="production-process__image-block">
+          <img class="production-process__image" src="img/production-process.jpg" width="260" height="150" alt="Процесс производства">
+        </div>
+        <div class="production-process__block">
+          <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production-process__order button" href="form.html">Сделать заказ</a>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" aria-label="Наш Инстаграмм">Инстаграмм</a></li>
-          <li class="social__item"><a href="#" aria-label="Наш Фейсбук">Фейсбук</a></li>
-          <li class="social__item"><a href="#" aria-label="Наш Твиттер">Твиттер</a></li>
+          <li class="social__item social__item--inst"><a class="social__link social__link--inst" href="#" aria-label="Наш Инстаграмм"></a></li>
+          <li class="social__item social__item--facebook"><a class="social__link social__link--facebook" href="#" aria-label="Наш Фейсбук"></a></li>
+          <li class="social__item social__item--twitter"><a class="social__link social__link--twitter" href="#" aria-label="Наш Твиттер"></a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
+        <a class="copyright__link"></a>
       </div>
     </footer>
   </body>

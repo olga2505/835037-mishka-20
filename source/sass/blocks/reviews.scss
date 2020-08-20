@@ -1,0 +1,75 @@
+.reviews {
+  padding: 0 30px 30px;
+  margin-bottom: 45px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+    width: 100%;
+    height: 6px;
+  }
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  color: $font-color;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  color: $font-color;
+}
+
+.reviews__toggle-wrapper {
+  display: flex;
+  width: 260px;
+  margin-bottom: 38px;
+}
+
+.reviews__toggle {
+  width: 50%;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid $light-gray;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--prev {
+    border-right: none;
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-left-arrow.svg");
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+  color: #000000;
+  font-size: 15px;
+  line-height: 24px;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page__body {
+  min-height: 100%;
+}

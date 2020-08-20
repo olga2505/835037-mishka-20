@@ -1,1 +1,23 @@
 // Начните писать стили здесь
+@import "normalize.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/menu.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/hit.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card-product.scss";
+@import "blocks/production-process.scss";
+@import "blocks/form.scss";
+// @import "mixin.scss";

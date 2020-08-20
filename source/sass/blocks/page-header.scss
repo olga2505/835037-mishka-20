@@ -1,0 +1,11 @@
+.page-header {
+  display: flex;
+  position: relative;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  box-shadow: 0 1px 0 $light-gray, inset 0 1px 0 $light-gray;
+}
+
+.page-header__logo {
+  margin: 0 auto;
+}

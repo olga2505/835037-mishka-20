@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Форма заказа</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo"  href="index.html">
         <img src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип Мишки">
       </a>
       <button class="menu menu--open" type="button" aria-label="Открыть меню"></button>
-      <button class="menu menu--closs" type="button" aria-label="Закрыть меню"></button>
-      <nav class="main-nav">
+      <button class="menu menu--closs hidden" type="button" aria-label="Закрыть меню"></button>
+      <nav class="main-nav hidden">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">
@@ -41,104 +42,105 @@
       <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset form__fieldset--type type">
-          <legend class="form__subtitle">Тип</legend>
-          <ul class="form__list type__list">
-            <li class="type__item">
-              <input class="type__input" type="radio" name="type" value="interior-accessory" id="interior-accessory" checked>
-              <label class="type__label" for="interior-accessory">Аксессуар для интерьера</label>
+          <legend class="form__subtitle form__subtitle--type">Тип</legend>
+          <ul class="form__list form__list--type">
+            <li class="form__type-item">
+              <input class="visually-hidden form__input form__input--type" type="radio" name="type" value="interior-accessory" id="interior-accessory" checked>
+              <label class="form__label form__label--type" for="interior-accessory">Аксессуар для интерьера</label>
             </li>
-            <li class="type__item">
-              <input class="type__input" type="radio" name="type" value="kids-toy" id="kids-toy">
-              <label class="type__label" for="kids-toy">Детская игрушка</label>
+            <li class="form__type-item">
+              <input class="visually-hidden form__input form__input--type" type="radio" name="type" value="kids-toy" id="kids-toy">
+              <label class="form__label form__label--type" for="kids-toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--color color">
-          <legend class="form__subtitle">Цвет</legend>
-          <ul class="form__list color__list">
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="white" id="white" checked>
-              <label class="color__label" for="white">Белый</label>
+          <legend class="form__subtitle form__subtitle--color">Цвет</legend>
+          <ul class="form__list form__list--color">
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="white" id="white" checked>
+              <label class="form__label form__label--color" for="white">Белый</label>
             </li>
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="gray" id="gray" checked>
-              <label class="color__label" for="gray">Серый</label>
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="gray" id="gray" checked>
+              <label class="form__label form__label--color" for="gray">Серый</label>
             </li>
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="tiffany" id="tiffany">
-              <label class="color__label" for="tiffany">«Тиффани»</label>
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="tiffany" id="tiffany">
+              <label class="form__label form__label--color" for="tiffany">«Тиффани»</label>
             </li>
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="black" id="black">
-              <label class="color__label" for="black">Черный</label>
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="black" id="black">
+              <label class="form__label form__label--color" for="black">Черный</label>
             </li>
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="pink" id="pink">
-              <label class="color__label" for="pink">Розовый</label>
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="pink" id="pink">
+              <label class="form__label form__label--color" for="pink">Розовый</label>
             </li>
-            <li class="color__item">
-              <input class="color__input" type="checkbox" name="color" value="orange" id="orange">
-              <label class="color__label" for="orange">Оранжевый</label>
+            <li class="form__color-item">
+              <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" value="orange" id="orange">
+              <label class="form__label form__label--color" for="orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--name user-name">
-          <legend class="form__subtitle">ФИО</legend>
-          <ul class="form__list user-name__list">
-            <li class="user-name__item">
-              <input class="user-name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
-              <label class="user-name__label" for="name">Имя:</label>
+          <legend class="form__subtitle form__subtitle--name">ФИО</legend>
+          <ul class="form__list form__list--user-name">
+            <li class="form__item-user-name">
+              <label class="form__label form__label--user-name" for="name">Имя:</label>
+              <input class="form__input form__input--user-name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
             </li>
-            <li class="user-name__item">
-              <input class="user-name__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
-              <label class="user-name__label" for="last-name">Фамилия:</label>
+            <li class="form__item-user-name">
+              <label class="form__label form__label--user-name" for="last-name">Фамилия:</label>
+              <input class="form__input form__input--user-name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
             </li>
-            <li class="user-name__item">
-              <input class="user-name__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-              <label class="user-name__label" for="patronymic">Отчество:</label>
+            <li class="form__item-user-name">
+              <label class="form__label form__label--user-name" for="patronymic">Отчество:</label>
+              <input class="form__input form__input--user-name" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--tel uaer-tel">
-          <legend class="form__subtitle">Тел</legend>
-          <ul class="form__list user-tel__list">
+          <legend class="form__subtitle form__subtitle--tel">Тел</legend>
+          <ul class="form__list form__list--user-tel">
             <li class="user-tel__item">
-              <input class="user-tel__input" type="tel" name="natelme" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-              <label class="user-tel__label" for="tel">Телефон</label>
+              <input class="form__input form__input--user-tel" type="tel" name="natelme" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="телефон">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--email user-email">
-          <legend class="form__subtitle">E-mail</legend>
-          <ul class="form__list user-email__list">
+          <legend class="form__subtitle form__subtitle--email">E-mail</legend>
+          <ul class="form__list form__list--user-email">
             <li class="user-email__item">
-              <input class="user-email__input" type="email" name="email" id="email" placeholder="Ваш Email*">
-              <label class="user-email__label" for="email">e-mail</label>
+              <input class="form__input form__input--user-email" type="email" name="email" id="email" placeholder="Ваш Email*" aria-label="email">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comments comments">
-          <legend class="form__subtitle">Доп</legend>
-          <ul class="form__list comments__list">
+          <legend class="form__subtitle form__subtitle--comments">Доп</legend>
+          <ul class="form__list form__list--comments">
             <li class="comments__item">
               <textarea class="comments__field" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
           </ul>
         </fieldset>
-        <p class="form__footnote">*Поля обязательны для заполнения</p>
-        <button class="form__submit button" type="submit">Отправить заказ</button>
+        <div class="form__wrap-submit">
+          <p class="form__footnote">*Поля обязательны для заполнения</p>
+          <button class="form__submit button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" aria-label="Наш Инстаграмм">Инстаграмм</a></li>
-          <li class="social__item"><a href="#" aria-label="Наш Фейсбук">Фейсбук</a></li>
-          <li class="social__item"><a href="#" aria-label="Наш Твиттер">Твиттер</a></li>
+          <li class="social__item social__item--inst"><a class="social__link social__link--inst" href="#" aria-label="Наш Инстаграмм"></a></li>
+          <li class="social__item social__item--facebook"><a class="social__link social__link--facebook" href="#" aria-label="Наш Фейсбук"></a></li>
+          <li class="social__item social__item--twitter"><a class="social__link social__link--twitter" href="#" aria-label="Наш Твиттер"></a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
+        <a class="copyright__link"></a>
       </div>
     </footer>
   </body>

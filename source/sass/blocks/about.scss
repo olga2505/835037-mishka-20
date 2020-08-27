@@ -1,6 +1,17 @@
 .about {
   padding: 0 30px 0 30px;
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 0 50px;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px 0 225px;
+    width: $desktop-width;
+    margin: 0 auto 90px auto;
+  }
 }
 
 .about__title {
@@ -8,12 +19,28 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
 }
 
 .about__item {
@@ -21,4 +48,23 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.about__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.about__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }

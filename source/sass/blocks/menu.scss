@@ -1,14 +1,23 @@
-.menu {
-  position: absolute;
-  top: 32px;
-  right: 33px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+.menu-toggle {
+  display: none;
+}
 
-  &--open {
+@media (max-width: $mobile-width-only) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 33px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     width: 20px;
     height: 14px;
     background-image: url("../img/icon-menu-open.svg");
   }
+}
+
+// при отсутствии js убрать кнопку
+.page-header--nojs .menu-toggle {
+  display: none;
 }

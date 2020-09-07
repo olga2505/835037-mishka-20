@@ -3,39 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип Мишки">
-      </a>
-      <button class="menu menu--open" type="button" aria-label="Открыть меню"></button>
-      <button class="menu menu--closs hidden" type="button" aria-label="Закрыть меню"></button>
-      <nav class="main-nav hidden">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <input placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrap page-header__wrap--open-menu page-header--nojs">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип Мишки">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list main-nav__list--catalog">
+            <li class="main-nav__item main-nav__item--catalog">
+              <a href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--catalog">
+              <a href="#">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
+          <ul class="main-nav__list site-list main-nav__list--basket">
+            <li class="main-nav__item site-list__item site-list__item--search">
+              <a class="site-link__search" href="#"><span>Поиск по сайту</span></a>
+            </li>
+            <li class="main-nav__item site-list__item site-list__item--basket">
+              <a class="site-link__basket" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--sale">
+            <li class="main-nav__item site-list__item--new">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item site-list__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
@@ -92,6 +103,7 @@
       </div>
     </main>
     <footer class="page-footer">
+      <img  class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item social__item--inst"><a class="social__link social__link--inst" href="#" aria-label="Наш Инстаграмм"></a></li>
@@ -104,5 +116,6 @@
         <a class="copyright__link"></a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

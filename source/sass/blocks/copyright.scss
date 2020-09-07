@@ -1,6 +1,10 @@
 .copyright {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
@@ -9,6 +13,10 @@
   font-weight: 700;
   vertical-align: middle;
   margin-right: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
 }
 
 .copyright__link {

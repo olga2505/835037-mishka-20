@@ -1,11 +1,51 @@
-.page-header {
+.page-header__wrap {
   display: flex;
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 0 0 0;
   box-shadow: 0 1px 0 $light-gray, inset 0 1px 0 $light-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  &--open-menu {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-header__logo {
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 17px 0 0 0;
+    right: 71%;
+    z-index: 10;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 50%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  // Если меню открыто, то кнопка крестик
+  .page-header__wrap--open-menu .menu-toggle {
+    width: 21px;
+    height: 20px;
+    background-image: url("../../img/icon-menu-close.svg");
+  }
+
+  // Если меню закрыто, то оно скрыто
+  .page-header__wrap--clossed-menu .main-nav {
+    display: none;
+  }
 }

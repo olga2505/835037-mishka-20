@@ -1,11 +1,20 @@
 .card-product {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card-product__image {
-  width: 260px;
-  height: 195px;
+  width: 100%;
+  height: auto;
 }
 
 .card-product__title {
@@ -13,11 +22,27 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card-product__block {
-  padding: 27px 28px 26px 28px;
+  padding: 27px 28px 25px 28px;
   border: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    padding-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    min-height: 230px;
+  }
 }
 
 .card-product__description {
@@ -25,9 +50,13 @@
   line-height: 30px;
   font-weight: 400;
   color: $font-color;
-  border-bottom: 1px solid $light-gray;
   padding-bottom: 17px;
-  margin-bottom: 22px;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .card-product__price {
@@ -35,11 +64,17 @@
   line-height: 24px;
   font-weight: 700;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .card-product__buy-block {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $light-gray;
+  padding-top: 23px;
 }
 
 .card-product__button {

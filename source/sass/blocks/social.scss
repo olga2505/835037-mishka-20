@@ -1,6 +1,15 @@
 .social {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 6px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
+  }
 }
 
 .social__list {

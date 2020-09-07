@@ -4,11 +4,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px 0 50px;
-    margin-bottom: 83px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 200px 0 225px;
+    padding: 0 225px 0 225px;
     width: $desktop-width;
     margin: 0 auto 90px auto;
   }
@@ -23,6 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,12 +40,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    row-gap: 52px;
   }
 }
 
 .about__item {
-  margin-top: 80px;
+  margin-top: 83px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -52,6 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    margin-top: 59px;
   }
 }
 

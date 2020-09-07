@@ -10,16 +10,14 @@
 }
 
 .main-nav {
-  position: absolute;
   top: 79px;
   background-color: white;
   width: 100%;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    position: static;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -37,13 +35,12 @@
   &--basket {
     @media (min-width: $tablet-width) {
       order: -1;
-      margin: 0 50px 0 0;
+      margin: 0 20px 0 0;
       align-self: flex-end;
-      margin-left: 50%;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 30%;
+      margin: -78px 2px 0 30%;
     }
   }
 
@@ -52,18 +49,34 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
+      z-index: 2;
+      position: absolute;
+      bottom: -69px;
     }
   }
 
   &--catalog {
     @media (min-width: $tablet-width) {
       margin-right: 74px;
+      margin-left: 20px;
+      position: absolute;
+      z-index: 2;
+      bottom: -69px;
     }
 
     @media (min-width: $desktop-width) {
+      position: relative;
+      bottom: auto;
+      margin-left: 0;
       margin-right: 0;
       order: -1;
     }
+  }
+}
+
+.main-nav__item--catalog:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
   }
 }
 
@@ -76,26 +89,27 @@
   line-height: 24px;
   font-weight: 700;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
   &--catalog {
     @media (min-width: $tablet-width) {
       font-size: 15px;
-      margin: 0 30px 0 0;
+      margin: 0 37px 0 0;
+      padding-top: 32px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 17px;
+      padding-top: 33px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
   }
 }
 
 .main-nav__item a {
   display: flex;
-  align-items: center;
 }
 
 // при отсутствии js
@@ -105,12 +119,12 @@
 }
 
 .main-nav__delivery {
-  margin: 0;
-  font-size: 15px;
-  line-height: 24px;
   display: flex;
   min-height: 79px;
-  align-items: center;
+  margin: 0 20px 0 0;
+  padding-top: 32px;
+  font-size: 15px;
+  line-height: 24px;
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -118,6 +132,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
-    order: 2;
+    position: absolute;
+    z-index: 2;
+    bottom: -69px;
+    right: 30px;
   }
 }

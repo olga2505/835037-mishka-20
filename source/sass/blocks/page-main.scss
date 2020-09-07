@@ -3,19 +3,33 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  padding: 90px 0 0 0;
+  padding: 74px 0 0 0;
   margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/hero-tablet@1x.jpg");
-    margin-top: -79px;
-    margin-bottom: 40px;
-    padding: 150px 0 0 0;
+    margin-bottom: 44px;
+    padding: 156px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: -79px auto 120px auto;
+    margin: 0 auto 113px auto;
+    padding-top: 158px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      height: 1px;
+      transform: translateX(-50%);
+      background-color: $light-gray;
+    }
   }
 }
 
@@ -29,15 +43,15 @@
   margin-bottom: 120px;
 
   @media (min-width: $tablet-width) {
-    font-size: 53px;
-    line-height: 57px;
-    margin-bottom: 375px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 43px;
-    line-height: 50px;
-    margin-bottom: 375px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 355px;
   }
 }
 
@@ -47,10 +61,26 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
     flex-direction: row;
+    min-height: 127px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 23px;
+      bottom: -4px;
+      left: -5px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: cover;
+    }
   }
 }
 
@@ -64,6 +94,9 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding: 26px 140px 31px 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &--interior {

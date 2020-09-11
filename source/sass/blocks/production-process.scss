@@ -11,6 +11,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 60% auto;
+    max-width: $desktop-width;
+    margin: 0 auto 58px auto;
   }
 }
 

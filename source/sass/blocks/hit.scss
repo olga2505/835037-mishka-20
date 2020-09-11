@@ -175,9 +175,7 @@
   margin: 0;
 }
 
-.hit__photo-1 {
-  width: 100%;
-  height: auto;
+.hit__wrap {
   margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
@@ -192,6 +190,12 @@
     z-index: -1;
     position: relative;
   }
+}
+
+.hit__photo-1 {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hit__price {

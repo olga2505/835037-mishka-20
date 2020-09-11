@@ -27,12 +27,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 50px 150px 50px;
     width: $desktop-width;
     margin: 0 auto 71px auto;
+    background-position: 50px 0;
   }
 }
 
@@ -175,6 +184,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {

@@ -79,7 +79,13 @@
               </div>
             </dl>
           </div>
-          <img class="hit__photo-1" src="img/triple-set-mobile-1.jpg" width="260" height="315" alt="Фото товара">
+          <div class="hit__wrap">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="hit__photo-1" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фото товара">
+            </picture>
+          </div>
           <div class="hit__inner hit__inner--bottom">
             <p class="hit__price">Цена: 990 руб.</p>
             <button class="hit__order button" type="button">Заказать</button>
@@ -131,7 +137,11 @@
           </dl>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobil-1.png" width="322" height="457" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </div>
         <div class="contacts__block-write">
           <button class="contacts__write button">Напишите нам</button>

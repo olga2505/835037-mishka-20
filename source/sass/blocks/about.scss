@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 225px 0 225px;
     width: $desktop-width;
-    margin: 0 auto 90px auto;
+    margin: 0 auto 87px auto;
   }
 }
 
@@ -49,10 +49,69 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+  }
+
+  &--eco::before {
+    background-image: url("../../img/icon-feature-flower.svg");
+    width: 33px;
+    height: 38px;
+    top: -56px;
+    left: 8px;
+  }
+
+  &--style::before {
+    background-image: url("../../img/icon-feature-money.svg");
+    width: 47px;
+    height: 27px;
+    top: -56px;
+    left: 0;
+  }
+
+  &--like::before {
+    background-image: url("../../img/icon-feature-heart.svg");
+    width: 34px;
+    height: 27px;
+    top: -51px;
+    left: 7px;
+  }
+
+  &--hand::before {
+    background-image: url("../../img/icon-feature-ball.svg");
+    width: 35px;
+    height: 34px;
+    top: -54px;
+    left: 3px;
+  }
+
+  &--support::before {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    width: 55px;
+    height: 23px;
+    top: -53px;
+    left: -6px;
+  }
+
+  &--gift::before {
+    background-image: url("../../img/icon-feature-gift.svg");
+    width: 33px;
+    height: 32px;
+    top: -55px;
+    left: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 59px;
   }
 }

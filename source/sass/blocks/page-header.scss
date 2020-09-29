@@ -26,13 +26,27 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin: 17px 0 0 0;
-    right: 71%;
+    margin: 22px 0 0 0;
+    right: 79%;
     z-index: 10;
   }
 
   @media (min-width: $desktop-width) {
     right: 50%;
+    transform: translateX(50%);
+    margin-top: 9px;
+  }
+}
+
+.page-header__logo-icon {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 

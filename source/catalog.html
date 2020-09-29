@@ -54,6 +54,9 @@
         <li class="catalog__item">
           <article class="card-product">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
               <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия">
@@ -71,6 +74,9 @@
         <li class="catalog__item">
           <article class="card-product">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
               <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия">
@@ -88,6 +94,9 @@
         <li class="catalog__item">
           <article class="card-product">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x@1x.webp 1x, img/photo-toys-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
               <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg"  srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия">
@@ -107,6 +116,9 @@
         <h2 class="production-process__title">Процесс производства</h2>
         <div class="production-process__image-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x@1x.webp 1x, img/video-desktop2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="production-process__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
@@ -123,9 +135,27 @@
         <img  class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип">
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item social__item--inst"><a class="social__link social__link--inst" href="#" aria-label="Наш Инстаграмм"></a></li>
-            <li class="social__item social__item--facebook"><a class="social__link social__link--facebook" href="#" aria-label="Наш Фейсбук"></a></li>
-            <li class="social__item social__item--twitter"><a class="social__link social__link--twitter" href="#" aria-label="Наш Твиттер"></a></li>
+            <li class="social__item social__item--inst">
+              <a href="#" aria-label="Наш Инстаграмм">
+                <svg class="social__link social__link--inst" wigth="22" height="21">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--facebook">
+              <a href="#" aria-label="Наш Фейсбук">
+                <svg class="social__link social__link--facebook" wigth="15" height="28">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--twitter">
+              <a href="#" aria-label="Наш Твиттер">
+                <svg class="social__link social__link--twitter" wigth="23" height="20">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">

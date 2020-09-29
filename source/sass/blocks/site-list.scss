@@ -1,6 +1,4 @@
 .site-list__item {
-  min-height: 87px;
-
   &--search {
     @media (min-width: $tablet-width) {
       min-width: 83px;
@@ -29,9 +27,15 @@
 .site-list__item--new a,
 .site-list__item--sale a {
   padding-top: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+  }
 }
 
 .site-link__search {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     position: relative;
     top: 36px;
@@ -41,17 +45,8 @@
     transform: translateX(-50%);
   }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 18px;
-      height: 18px;
-      top: 0;
-      left: 0;
-      background-image: url("../../img/icon-search.svg");
-      cursor: pointer;
-    }
+  @media (min-width: $desktop-width) {
+    top: 32px;
   }
 }
 
@@ -62,8 +57,39 @@
 }
 
 .site-link__basket {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding: 0 0 0 83px;
     margin-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+  }
+}
+
+.site-link__icon-cart {
+  fill: #000000;
+  opacity: 0.2;
+  position: absolute;
+  top: 2px;
+  left: -44px;
+
+  @media (min-width: $tablet-width) {
+    left: 31px;
+  }
+}
+
+.site-link__icon-search {
+  fill: #000000;
+  opacity: 0.2;
+  position: absolute;
+  top: 3px;
+  left: -42px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 1px;
   }
 }

@@ -26,6 +26,15 @@
 .social__link {
   background-repeat: no-repeat;
 
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
   &--inst {
     width: 22px;
     height: 21px;

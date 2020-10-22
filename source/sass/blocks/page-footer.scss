@@ -29,12 +29,28 @@
   }
 }
 
-.page-footer__copyright {
-  padding-bottom: 23px;
+.page-footer__logo {
+  padding-bottom: 22px;
+  background-image: url("../../img/logo-footer.svg");
+  width: 102px;
+  height: 34px;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../../img/logo-footer-green.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__logo {
+.page-footer__logo-img {
   display: none;
+
+  &:hover {
+    fill: #46c1ae;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

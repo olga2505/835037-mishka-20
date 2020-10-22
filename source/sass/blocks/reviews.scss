@@ -152,6 +152,16 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
   }
@@ -193,5 +203,18 @@
 
   @media (min-width: $desktop-width) {
     width: 175px;
+  }
+}
+
+.contacts__description-link {
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    border-bottom: none;
   }
 }

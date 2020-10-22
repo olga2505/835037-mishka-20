@@ -12,8 +12,13 @@
   background-color: transparent;
   cursor: pointer;
 
-  // &:active,
-  // &:focus {
-  //   outline: none;
-  // }
+  &:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

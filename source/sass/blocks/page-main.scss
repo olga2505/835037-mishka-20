@@ -13,7 +13,7 @@
   position: relative;
 
   @media (min-resolution: $retina-dppx),
-  (min-resolution: $retina-dpi) {
+    (min-resolution: $retina-dpi) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 
@@ -115,7 +115,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 120px;
     overflow: hidden;
   }
 }
@@ -138,11 +137,29 @@
 
   &--interior {
     background-color: $color-1;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
     background-color: $color-2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
+}
+
+.page-main__item:hover .page-main__icon-interior,
+.page-main__item:hover .page-main__icon-toy {
+  opacity: 0.7;
+}
+
+.page-main__item:active .page-main__icon-interior,
+.page-main__item:active .page-main__icon-toy {
+  opacity: 0.3;
 }
 
 .page-main__icon-interior {

@@ -1,6 +1,7 @@
 .card-product {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -34,6 +35,14 @@
   padding: 27px 28px 25px 28px;
   border: 1px solid $light-gray;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -42,7 +51,8 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    min-height: 230px;
+    min-height: 197px;
+    padding: 30px 27px 23px 25px;
   }
 }
 
@@ -57,6 +67,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -76,6 +90,10 @@
   justify-content: space-between;
   border-top: 1px solid $light-gray;
   padding-top: 23px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
 }
 
 .card-product__button {

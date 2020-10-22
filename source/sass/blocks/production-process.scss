@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
     padding: 0 50px;
+    margin-bottom: 64px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 65% auto;
     max-width: $desktop-width;
-    margin: 0 auto 58px auto;
+    margin: 0 auto 106px auto;
+    grid-template-rows: min-content 1fr;
   }
 }
 
@@ -31,23 +33,25 @@
     width: 32px;
     height: 22px;
     background-image: url("../img/icon-video.svg");
-    left: 33px;
-    top: 35px;
+    left: 41px;
+    top: 36px;
 
     @media (min-width: $desktop-width) {
-      left: 96px;
-      top: 57px;
+      left: 78px;
+      top: 47px;
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     border-bottom: none;
-    padding-top: 40px;
+    padding-top: 39px;
+    padding-left: 106px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 99px 26px 96px;
+    padding: 97px 99px 2px 78px;
   }
 }
 
@@ -63,17 +67,25 @@
   }
 }
 
-.production-process__image-block::after {
+.production-process__play-svg {
   position: absolute;
-  content: "";
   width: 100px;
   height: 77px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background-image: url("../../img/icon-play.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    width: 120px;
+    height: 84px;
+  }
+
+  &:active {
+    width: 80px;
+    height: 62px;
+    opacity: 0.7;
+  }
 }
 
 .production-process__image {
@@ -90,11 +102,11 @@
   padding: 0 32px 0 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 0 40px;
+    padding: 0 31px 0 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 91px 0 97px;
+    padding: 0 59px 0 77px;
   }
 }
 
@@ -108,10 +120,13 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    padding: 0;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding-top: 25px;
+    margin-bottom: 51px;
   }
 }
 
@@ -127,6 +142,12 @@
 
   @media (min-width: $tablet-width) {
     line-height: 16px;
+    margin-bottom: 45px;
+    width: 584px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }

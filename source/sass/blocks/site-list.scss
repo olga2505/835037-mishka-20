@@ -35,6 +35,7 @@
 
 .site-link__search {
   position: relative;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -58,6 +59,7 @@
 
 .site-link__basket {
   position: relative;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 0 83px;
@@ -92,4 +94,14 @@
     top: 0;
     left: 1px;
   }
+}
+
+.site-link__basket:hover .site-link__icon-cart {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.site-link__search:hover .site-link__icon-search {
+  fill: #63d1bb;
+  opacity: 1;
 }

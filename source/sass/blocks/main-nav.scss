@@ -117,6 +117,14 @@
   display: flex;
 }
 
+.main-nav__item a:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item a:active {
+  opacity: 0.3;
+}
+
 // при отсутствии js
 .page-header--nojs .main-nav {
   position: static;

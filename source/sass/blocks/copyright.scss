@@ -23,4 +23,14 @@
   width: 27px;
   height: 34px;
   background-image: url("../img/logo-htmlacademy.svg");
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-2.svg");
+  }
+
+  &:active {
+    background-image: url("../img/logo-htmlacademy-2.svg");
+    opacity: 0.3;
+  }
 }

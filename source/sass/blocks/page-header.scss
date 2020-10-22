@@ -39,6 +39,14 @@
 }
 
 .page-header__logo-icon {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 46px;

@@ -15,7 +15,7 @@
     content: "";
     width: 100%;
     height: 23px;
-    bottom: 0;
+    bottom: -1px;
     left: -5px;
     background-image: url("../../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -144,6 +144,10 @@
 }
 
 .form__wrap {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
     width: 700px;
@@ -319,6 +323,7 @@
 
   &--user-name {
     margin-bottom: 32px;
+    width: 100%;
   }
 
   &--user-tel {
@@ -335,6 +340,7 @@
 
   &--comments {
     margin-bottom: 10px;
+    width: 100%;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 42px;
@@ -379,13 +385,14 @@
   }
 
   &--type {
-    padding-left: 78px;
+    padding-left: 60px;
     margin-bottom: 12px;
     height: 42px;
     display: flex;
     align-items: center;
 
     @media (min-width: $tablet-width) {
+      padding-left: 80px;
       margin-bottom: 34px;
     }
 
@@ -456,6 +463,14 @@
       margin-right: 27px;
     }
   }
+}
+
+.form__label:hover::before {
+  border: 2px solid #62d1ba;
+}
+
+.form__label:active::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
 .form__input--type:checked + .form__label--type::after {
@@ -537,55 +552,63 @@
   }
 }
 
-.form__item-user-tel {
+// .form__item-user-tel {
+//   position: relative;
+
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     width: 25px;
+//     height: 24px;
+//     background-image: url("../img/icon-phone.svg");
+//     background-position: center;
+//     top: 3px;
+//     right: 7px;
+//     z-index: 2;
+//     opacity: 0.2;
+
+//     @media (min-width: $tablet-width) {
+//       top: 11px;
+//       right: 26px;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       right: 8px;
+//     }
+//   }
+// }
+
+.form__item-contact {
   position: relative;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/icon-phone.svg");
-    background-position: center;
-    top: 3px;
-    right: 7px;
-    z-index: 2;
-    opacity: 0.2;
+.form__input-svg {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  opacity: 0.2;
 
-    @media (min-width: $tablet-width) {
-      top: 11px;
-      right: 26px;
-    }
+  &--email {
+    top: 13px;
+    right: 12px;
+  }
 
-    @media (min-width: $desktop-width) {
-      right: 8px;
-    }
+  &--tel {
+    top: 13px;
+    right: 12px;
   }
 }
 
-.form__item-user-email {
-  position: relative;
+.form__input--user-email:hover + .form__input-svg,
+.form__input--user-tel:hover + .form__input-svg {
+  opacity: 1;
+  fill: #62d1ba;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 32px;
-    height: 21px;
-    background-image: url("../img/icon-mail.svg");
-    background-position: center;
-    top: 7px;
-    right: 3px;
-    z-index: 2;
-    opacity: 0.2;
-
-    @media (min-width: $tablet-width) {
-      top: 16px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 4px;
-    }
-  }
+.form__input--user-email:active + .form__input-svg,
+.form__input--user-tel:active + .form__input-svg {
+  opacity: 1;
+  fill: #62d1ba;
 }
 
 .form__input::-webkit-input-placeholder {

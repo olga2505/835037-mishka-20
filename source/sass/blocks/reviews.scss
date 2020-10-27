@@ -31,13 +31,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
   }
 

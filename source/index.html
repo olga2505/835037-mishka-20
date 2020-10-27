@@ -2,9 +2,12 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Товары для дома">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -62,7 +65,7 @@
     </svg>
     <header class="page-header">
       <div class="page-header__wrap page-header__wrap--open-menu page-header--nojs">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="#">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -124,7 +127,7 @@
             </svg>
           </a>
           <a href="#" class="page-main__item page-main__item--toys">
-            <span>Детские<br> игрушки</apan>
+            <span>Детские<br> игрушки</span>
             <svg class="page-main__icon-toy" width="60" height="60">
               <use xlink:href="#icon-toy"></use>
             </svg>
@@ -232,26 +235,26 @@
     </main>
     <footer class="page-footer">
       <div class="footer__wrap">
-        <a class="page-footer__logo" aria-label="Логотип"></a>
+        <a class="page-footer__logo" href="#" aria-label="Логотип"></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item social__item--inst">
               <a href="#" aria-label="Наш Инстаграмм">
-                <svg class="social__link social__link--inst" wigth="22" height="21">
+                <svg class="social__link social__link--inst" width="22" height="21">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item--facebook">
               <a href="#" aria-label="Наш Фейсбук">
-                <svg class="social__link social__link--facebook" wigth="15" height="28">
+                <svg class="social__link social__link--facebook" width="15" height="28">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item--twitter">
               <a href="#" aria-label="Наш Твиттер">
-                <svg class="social__link social__link--twitter" wigth="23" height="20">
+                <svg class="social__link social__link--twitter" width="23" height="20">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
@@ -260,7 +263,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link"></a>
+          <a class="copyright__link" href="#" aria-label="Разработано в HTML Academy"></a>
         </div>
       </div>
     </footer>
